@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark AI Reel Generator Theme - Enhanced */
+    --background: 222 47% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 47% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 47% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 70% 60%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 5% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 222 47% 12%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 280 70% 65%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5% 15%;
+    --input: 240 5% 15%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+
+    /* AI Theme Specific Colors */
+    --gradient-primary: linear-gradient(135deg, hsl(263, 70%, 60%), hsl(280, 70%, 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(222, 47%, 7%), hsl(240, 10%, 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(263, 70%, 60%) 0%, hsl(280, 70%, 65%) 50%, hsl(220, 100%, 70%) 100%);
+    
+    --glass-bg: hsla(222, 47%, 7%, 0.7);
+    --glass-border: hsla(263, 70%, 60%, 0.2);
+    
+    --shadow-glow: 0 0 40px hsla(263, 70%, 60%, 0.4);
+    --shadow-card: 0 12px 48px hsla(222, 47%, 3%, 0.6);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Progress and loading colors */
+    --progress-bg: hsl(240, 5%, 15%);
+    --progress-fill: linear-gradient(90deg, hsl(262, 83%, 58%), hsl(236, 72%, 79%));
+    
+    /* State colors */
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+    --info: 200 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
